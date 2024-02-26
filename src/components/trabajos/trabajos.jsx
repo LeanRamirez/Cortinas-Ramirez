@@ -7,10 +7,10 @@ import IMG6 from "../../assets/IMG6.jpg"
 
 
 
-const Trabajos = ()=>{
+const  Trabajos = ()=>{
     return(
         <div>
-            <div>
+            <div className="container">
                 <h1>Servicios</h1>
                 <p> Brindamos asesoramiento a cerca de la mejor opcion para el cliente.<br/>
                     Realizamos cotización sin cargo, contamos con una basta experiencia en el rubro siendo fabricantes

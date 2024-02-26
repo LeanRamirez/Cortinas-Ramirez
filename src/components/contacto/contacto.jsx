@@ -1,9 +1,6 @@
-
 import React, { useState } from 'react';
-import wsp from "../../assets/whatsapp.svg"
-import "./contacto.css"
-
-
+import wsp from "../../assets/whatsapp.svg";
+import "./contacto.css"; // Asegúrate de tener tu archivo de estilos CSS
 
 const Contacto = () => {
   const [nombre, setNombre] = useState('');
@@ -17,46 +14,50 @@ const Contacto = () => {
   };
 
   return (
-    <div>
-      
-      <h2>Contacto</h2>
-      <form className='container-fluid'>
-        <label htmlFor="nombre">Nombre:</label>
-        <input
-          type="text"
-          id="nombre"
-          value={nombre}
-          onChange={(e) => setNombre(e.target.value)}
-          required
-        />
+    <div className="contacto-container">
+      <h3>Contacto</h3>
+      <form className='contacto-form'>
+        <div className="form-group">
+          <label htmlFor="nombre">Nombre:</label>
+          <input className='text-area'
+            type="text"
+            id="nombre"
+            value={nombre}
+            onChange={(e) => setNombre(e.target.value)}
+            required
+          />
+        </div>
 
-        <label htmlFor="email">Consulta:</label>
-        <input
-          type="text"
-          id="email"
-          value={email}
-          onChange={(e) => setEmail(e.target.value)}
-          required
-        />
 
-        <label htmlFor="telefono">Número de Teléfono (con código de país):</label>
-        <input
-          type="tel"
-          id="telefono"
-          value={telefono}
-          onChange={(e) => setTelefono(e.target.value)}
-          required
-        />
+        <div className="form-group">
+          <label htmlFor="telefono"> Teléfono:</label>
+          <input className='text-area'
+            type="tel"
+            id="telefono"
+            value={telefono}
+            onChange={(e) => setTelefono(e.target.value)}
+            required
+          />
+        </div>
 
-        <button type="button" onClick={redirectToWhatsApp} className="btn btn-success">
-          <img className="bi bi-whatsapp" src={wsp}></img> Enviar Whatsapp
+        <div className="form-group">
+          <label htmlFor="email">Consulta:</label>
+          <input className='input-area'
+            type="text"
+            id="email"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+            required
+          />
+        </div>
+
+        <button type="button" onClick={redirectToWhatsApp} className="contacto-btn">
+          <img src={wsp} alt="WhatsApp" className="wsp-icon" /> 
         </button>
-
-          
-        
       </form>
     </div>
   );
 };
 
 export default Contacto;
+
