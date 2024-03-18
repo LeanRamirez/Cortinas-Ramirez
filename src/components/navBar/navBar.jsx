@@ -1,10 +1,9 @@
 import React from "react"
 import { Link } from "react-router-dom"
-import"./NavBar.css"
-import Contacto from "../contacto/contacto"
-import logo from "../../assets/logo.jpg"
+import  "./NavBar.css"
 import logo2 from "../../assets/logo2.jpg"
-import logo3 from "../../assets/logo3.jpg"
+import logo4 from "../../assets/logo4.jpg"
+
 
 
 
@@ -24,9 +23,9 @@ const NavBar = ()=>{
       </button>
       <div className="collapse navbar-collapse" id="navbar-toggler">
         <a className="navbar-brand">
-          <img className="logo" src={logo2} width="200px" alt="logo" />
+          <img className="logo" src={logo4} width="200px" alt="logo" />
         </a>
-        <h2>Cortinas Metalicas Ramirez</h2>
+        {/* <h2>Cortinas Metalicas Ramirez</h2> */}
         <ul className="navbar-nav d-flex justify-content-center align-items-center">
           <li className="nav-item">
             <Link className="nav-link active" aria-current="page" to='/'>Inicio </Link>
@@ -36,6 +35,9 @@ const NavBar = ()=>{
           </li>
           <li className="nav-item">
             <Link className="nav-link" to='/trabajos' aria-disabled="true">trabajos</Link>
+          </li>
+          <li className="nav-item">
+            <Link className="nav-link" to='/about' aria-disabled="true">Sobre nosotros</Link>
           </li>
         </ul>
       </div>

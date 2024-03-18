@@ -16,10 +16,10 @@ const Contacto = () => {
   return (
     <div className="contacto-container">
       <h3>Contacto</h3>
-      <form className='contacto-form'>
+      <form className="contacto-form">
         <div className="form-group">
           <label htmlFor="nombre">Nombre:</label>
-          <input className='text-area'
+          <input className="text-area"
             type="text"
             id="nombre"
             value={nombre}
@@ -31,7 +31,7 @@ const Contacto = () => {
 
         <div className="form-group">
           <label htmlFor="telefono"> Teléfono:</label>
-          <input className='text-area'
+          <input className="text-area"
             type="tel"
             id="telefono"
             value={telefono}
@@ -42,7 +42,7 @@ const Contacto = () => {
 
         <div className="form-group">
           <label htmlFor="email">Consulta:</label>
-          <input className='input-area'
+          <input className="input-area"
             type="text"
             id="email"
             value={email}

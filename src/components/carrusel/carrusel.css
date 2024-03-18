@@ -1,6 +1,11 @@
+.container{
+    display: block;
+}
+
+
 .container img{
-    width: 300px;
-    height: 300px;
+    width: 700px;
+    height: 400px;
     padding: 20px;
     padding-left: 5px;
 }

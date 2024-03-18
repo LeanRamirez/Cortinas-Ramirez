@@ -1,4 +1,4 @@
-import "./trabajos.css"
+import  "./trabajos.css"
 import IMG3 from "../../assets/img3.jpg"
 import IMG4 from "../../assets/IMG4.jpg"
 import IMG5 from "../../assets/IMG5.jpg"
@@ -10,9 +10,9 @@ import IMG6 from "../../assets/IMG6.jpg"
 const  Trabajos = ()=>{
     return(
         <div>
-            <div className="container">
+            <div className="container-fluid">
                 <h1>Servicios</h1>
-                <p> Brindamos asesoramiento a cerca de la mejor opcion para el cliente.<br/>
+                <p> Brindamos asesoramiento acerca de la mejor opcion para el cliente.<br/>
                     Realizamos cotización sin cargo, contamos con una basta experiencia en el rubro siendo fabricantes
                     
                 </p>
