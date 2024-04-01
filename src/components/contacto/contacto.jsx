@@ -1,25 +1,30 @@
 import React, { useState } from 'react';
 import wsp from "../../assets/whatsapp.svg";
-import "./contacto.css"; // Asegúrate de tener tu archivo de estilos CSS
+import style from "./contacto.module.css"; // Asegúrate de tener tu archivo de estilos CSS
 
 const Contacto = () => {
   const [nombre, setNombre] = useState('');
-  const [email, setEmail] = useState('');
+  const [consulta, setConsulta] = useState('');
   const [telefono, setTelefono] = useState('');
+  
 
-  const redirectToWhatsApp = () => {
-    const mensaje = `Hola, soy ${nombre}. Mi consulta es ${email} y mi número de teléfono es ${telefono}.`;
-    const urlWhatsApp = `https://wa.me/3794205998?text=${encodeURIComponent(mensaje)}`;
-    window.location.href = urlWhatsApp;
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+
+    const mensaje = `Hola, soy ${nombre}. Mi consulta es ${consulta} y mi número de teléfono es ${telefono}.`;
+    const mailToLink = `mailto:ramirezcortinasmetalicas@gmail.com?subject=Consulta&body=${encodeURIComponent(mensaje)}`;
+   
+    window.open(mailToLink, '_blank')
   };
 
   return (
-    <div className="contacto-container">
+    <div className={style.contactContainer}>
       <h3>Contacto</h3>
-      <form className="contacto-form">
-        <div className="form-group">
+      <form className={style.contactForm} onSubmit={handleSubmit}>
+        <div className={style.formGroup}>
           <label htmlFor="nombre">Nombre:</label>
-          <input className="text-area"
+          <input className={style.textArea}
             type="text"
             id="nombre"
             value={nombre}
@@ -29,9 +34,9 @@ const Contacto = () => {
         </div>
 
 
-        <div className="form-group">
+        <div className={style.formGroup}>
           <label htmlFor="telefono"> Teléfono:</label>
-          <input className="text-area"
+          <input className={style.textArea}
             type="tel"
             id="telefono"
             value={telefono}
@@ -40,20 +45,22 @@ const Contacto = () => {
           />
         </div>
 
-        <div className="form-group">
-          <label htmlFor="email">Consulta:</label>
-          <input className="input-area"
+        <div className={style.formGroup}>
+          <label htmlFor="consulta">Consulta:</label>
+          <textarea className={style.inputArea}
             type="text"
-            id="email"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
+            id="consulta"
+            value={consulta}
+            onChange={(e) => setConsulta(e.target.value)}
             required
           />
         </div>
+        <div className={style.buttonContainer}>
+          <button type="submit" className={style.contactBtn}>
+            Enviar correo 
+          </button>
 
-        <button type="button" onClick={redirectToWhatsApp} className="contacto-btn">
-          <img src={wsp} alt="WhatsApp" className="wsp-icon" /> 
-        </button>
+        </div>
       </form>
     </div>
   );

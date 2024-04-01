@@ -1,0 +1,69 @@
+/* En tu archivo de estilos CSS (contacto.css) */
+.contactContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+    margin: 0 auto;
+    padding-bottom: 15px;
+    background-image: url("../../assets/fondoContacto.webp");
+    background-size: cover;
+  }
+
+  .contactContainer h3{
+    margin-bottom: 10px;
+  }
+  
+  .contactForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .formGroup {
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+
+  .formGroup label{
+    margin-right: 15px;
+    margin-bottom: 5px;
+    text-decoration: underline;
+  }
+
+  .contactContainer{
+    display: flex;
+    align-items: center;
+  }
+
+
+  .contactBtn {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    /* align-items: center; */
+  }
+
+  .textArea{
+    margin-left: 15px;
+  }
+    
+  .inputArea{
+    width: 189px;
+    height: 100px; /* Ajusta la altura según sea necesario */
+    resize: vertical; /* Permite redimensionar verticalmente */
+    overflow-y: auto;
+    margin-left: 15px;
+  }
+  
+ 
+  
+
+
+  

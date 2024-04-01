@@ -1,0 +1,22 @@
+.containerCustom{
+    background-color: #15dde4;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.navbarNav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+.logo{
+    width: 45px;
+    height: 45px;
+    border-radius: 10px;
+}
+
+

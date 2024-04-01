@@ -1,0 +1,30 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    height: 350px;
+    margin-top: 40px;
+    background-image: url("../../assets/gris.jpg");
+    background-position:left;
+    background-size: cover;
+    opacity: 0.9;
+    align-items: center;
+}
+
+.titulo{
+    background-color: rgba(170, 167, 167, 0.6);
+    
+}
+.titulo h1{
+    font-family:'ExcludedItalic';
+    color: aqua;
+   /*ExcludedItalic, Roboto, Open Sans, Monserrat, Lato; Raleway, Oswald, Archivo Narrow */
+}
+
+
+.container p{
+    margin-top: 30px;
+    text-align: center;
+    color: rgba(5, 22, 255, 0.822);
+    
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif  ;
+}

@@ -1,0 +1,25 @@
+.info h1{
+   text-align: center;
+   font-family: 'ExcludedItalic';
+}
+
+.info h3{
+    text-align: center;
+    margin-top: 25px;
+ }
+
+ .info p{
+    text-align: center;
+    padding: 15px;
+ }
+
+.img{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 700px;
+    height: 400px;
+    padding : 20px;
+    /* margin-left: 0px; */
+}

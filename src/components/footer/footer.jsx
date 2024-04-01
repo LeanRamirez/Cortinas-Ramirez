@@ -1,8 +1,10 @@
 import React from "react";
 import styles from "./footer.module.css";
-/* Asegúrate de ajustar la ruta según tu estructura de archivos */
-// @import "~bootstrap-icons/font/bootstrap-icons.css";
-  // Asegúrate de ajustar la ruta según tu estructura de archivos
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faFacebook, faInstagram } from '@fortawesome/free-brands-svg-icons';
+
+
+const element = <FontAwesomeIcon icon="fa-brands fa-instagram" />
 
 const Footer = () => {
 
@@ -28,24 +30,27 @@ const Footer = () => {
             </p>
             <p>Teléfono: 3794-20-5998</p>
             <p>
-            <a href={`mailto:${emailAddress}`}> {emailAddress}</a>
+              <span> Email:
+              <a href={`mailto:${emailAddress}`}> {emailAddress}</a>
+              </span>
             </p>
+
 
             
           </div>
           <div className="col-md-6">
             <h4>Redes Sociales</h4>
             {/* Aquí puedes agregar enlaces a tus perfiles de redes sociales */}
-            <ul>
+            <ul className={styles.decoration}>
               <li>
                 <a href={facebookPageUrl} target="_blank" rel="noopener noreferrer">
-                <i className="bi bi-facebook"></i> Facebook
+                  <FontAwesomeIcon icon={faFacebook}/> Facebook
                 </a>
 
               </li>
               <li>
                 <a href={instagramPageUrl} target="_blank" rel="noopener noreferrer">
-                  <i className="bi bi-instagram"></i> Instagram
+                  <FontAwesomeIcon icon={faInstagram} /> Instagram
                 </a>
               </li>
               {/* Agrega más redes sociales según sea necesario */}

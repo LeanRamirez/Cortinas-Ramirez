@@ -3,15 +3,16 @@
 }
 
 .footer {
-    
     padding: 30px 0;
   }
   
   .footerBottom {
     text-align: center;
     padding-top: 10px;
-    border-top: 1px solid #ddd;
+    border-top: 1px solid #fcfafa;
     margin-top: 20px;
   }
 
-  
+  .decoration{
+    list-style-type: none;
+  }
