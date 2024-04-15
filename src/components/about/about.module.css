@@ -2,29 +2,33 @@
     display: flex;
     flex-direction: column;
     height: 350px;
-    margin-top: 40px;
+    margin-top: 50px;
     background-image: url("../../assets/gris.jpg");
     background-position:left;
     background-size: cover;
-    opacity: 0.9;
     align-items: center;
+    
+    
+}
+
+.backgroun{
+    background-color: rgba(125, 133, 143, 0.658);
+    width: 100%;
+    height: 100%;
 }
 
 .titulo{
-    background-color: rgba(170, 167, 167, 0.6);
+    font-family:'HACKED';
+    color: rgb(10, 10, 10);
     
-}
-.titulo h1{
-    font-family:'ExcludedItalic';
-    color: aqua;
-   /*ExcludedItalic, Roboto, Open Sans, Monserrat, Lato; Raleway, Oswald, Archivo Narrow */
+   /*HACKEDE,xcludedItalic, Roboto, Open Sans, Monserrat, Lato; Raleway, Oswald, Archivo Narrow */
 }
 
 
-.container p{
+.parrafo{
     margin-top: 30px;
     text-align: center;
-    color: rgba(5, 22, 255, 0.822);
+    color:black;
     
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif  ;
+    font-family:excludeditalic;
 }

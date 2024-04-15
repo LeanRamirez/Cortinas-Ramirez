@@ -35,7 +35,7 @@ const Contacto = () => {
 
 
         <div className={style.formGroup}>
-          <label htmlFor="telefono"> Teléfono:</label>
+          <label htmlFor="telefono"> Telefono:</label>
           <input className={style.textArea}
             type="tel"
             id="telefono"

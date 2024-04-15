@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebook, faInstagram } from '@fortawesome/free-brands-svg-icons';
 
 
-const element = <FontAwesomeIcon icon="fa-brands fa-instagram" />
+
 
 const Footer = () => {
 
@@ -25,7 +25,8 @@ const Footer = () => {
             <h4>Contacto</h4>
             <p>
                 <a href={googleMapsLink} target="_blank" rel="noopener noreferrer">
-                    Ver en Google Maps
+                  <FontAwesomeIcon icon="fa-solid fa-location-dot" />  Ver en Google Maps
+                    
                 </a>
             </p>
             <p>Teléfono: 3794-20-5998</p>

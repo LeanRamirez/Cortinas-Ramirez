@@ -12,7 +12,7 @@ const Carrusel=()=>{
             <div className={style.info}>
                 <h1>Cortinas Metalicas Ramirez</h1>
                 <h3>TE OFRECEMOS</h3>
-                <p>Todo lo relacionado a cortinas metalicas, realizamos instalaciones, reparaciones, asesoramiento y tenemos servicio de urgencia las 24 horas. Nos preocupa su negocio, por lo que antes de que usted realice cualquier tipo de compra, hacemos una evaluación de sus necesidades sin costo y le recomendaremos lo mejor que le convenga. Nuestra principal meta, es la satisfacción de nuestros clientes, por lo cual brindamos un amplio asesoramiento personalizado pre y post venta, ofeciendo un resultado óptimo con equipos de primera</p>
+                <p>Todo lo relacionado a cortinas metalicas, realizamos instalaciones, reparaciones, asesoramiento y tenemos servicio de urgencia las 24 horas. Nos preocupa su negocio, por lo que antes de que usted realice cualquier tipo de compra, hacemos una evaluacion de sus necesidades sin costo y le recomendaremos lo mejor que le convenga. Nuestra principal meta, es la satisfaccion de nuestros clientes, por lo cual brindamos un amplio asesoramiento personalizado pre y post venta, ofeciendo un resultado optimo con equipos de primera</p>
             </div>
             
             <div id="carouselExampleInterval" className="carousel slide" data-bs-ride="carousel">

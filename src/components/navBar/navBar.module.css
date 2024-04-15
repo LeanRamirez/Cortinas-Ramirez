@@ -4,6 +4,9 @@
     justify-content: space-between;
     align-items: center;
     width: 100%;
+    position:fixed;
+    z-index: 1000;
+    margin-top: 39px;
 }
 
 .navbarNav{
@@ -18,5 +21,6 @@
     height: 45px;
     border-radius: 10px;
 }
+
 
 

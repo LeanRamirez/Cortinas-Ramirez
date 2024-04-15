@@ -15,8 +15,8 @@ import logo4 from "../../assets/logo4.jpg"
 const NavBar = ()=>{
   
   return(
-   <div>
-      <nav className="navbar navbar-expand-sm" >
+   <div >
+      <nav className='navbar navbar-expand-sm'>
         <div className={style.containerCustom}>
           <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon"></span>
