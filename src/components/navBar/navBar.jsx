@@ -23,7 +23,7 @@ const NavBar = ()=>{
           </button>
         <div className={`collapse navbar-collapse ${style.navbarNav}`}  id="navbar-toggler">
           <a className="navbar-brand">
-            <img className={style.logo} src={logo4} alt="logo" />
+            <img className={style.logo} src={logo2} alt="logo" />
           </a>
           <ul className="navbar-nav">
             <li className="nav-item">

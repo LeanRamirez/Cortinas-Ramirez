@@ -19,7 +19,7 @@ const Footer = () => {
     
   return (
     <footer className={styles.footer}>
-      <div className="container">
+      <div className={styles.container}>
         <div className="row">
           <div className="col-md-6">
             <h4>Contacto</h4>

@@ -1,5 +1,7 @@
 .container{
-  background-color: #5296da;
+  padding: 50px;
+  color: #fcfafa;
+  background-color: #000000;
 }
 
 .footer {
@@ -8,11 +10,18 @@
   
   .footerBottom {
     text-align: center;
+    color: white;
+    height: 50px;
     padding-top: 10px;
     border-top: 1px solid #fcfafa;
     margin-top: 20px;
+    background-color: #15dde4;
   }
 
   .decoration{
     list-style-type: none;
+  }
+
+  .icon{
+    text-decoration: #15dde4;
   }

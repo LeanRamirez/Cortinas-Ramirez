@@ -35,7 +35,8 @@
     font-family: 'HACKED';
     margin-right: 15px;
     margin-bottom: 5px;
-    text-decoration: underline;
+    color: rgb(240, 79, 30);
+    text-decoration: underline rgb(2, 1, 1);
   }
 
   .contactContainer{
