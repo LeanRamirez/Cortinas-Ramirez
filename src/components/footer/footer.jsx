@@ -45,13 +45,13 @@ const Footer = () => {
             <ul className={styles.decoration}>
               <li>
                 <a href={facebookPageUrl} target="_blank" rel="noopener noreferrer">
-                  <FontAwesomeIcon icon={faFacebook}/> Facebook
+                  <FontAwesomeIcon className={styles.icon} icon={faFacebook}/> Facebook
                 </a>
 
               </li>
               <li>
                 <a href={instagramPageUrl} target="_blank" rel="noopener noreferrer">
-                  <FontAwesomeIcon icon={faInstagram} /> Instagram
+                  <FontAwesomeIcon className={styles.icon} icon={faInstagram} /> Instagram
                 </a>
               </li>
               {/* Agrega más redes sociales según sea necesario */}

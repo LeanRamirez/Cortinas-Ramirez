@@ -19,13 +19,61 @@
     padding: 15px;
  }
 
+.carrusel{
+   width: auto;
+}
+
+.carruselItem{
+   background-color: rgb(7, 7, 7);
+}
+
 .img{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    width: 700px;
-    height: 400px;
-    padding : 20px;
+    width: 100%;
+    height: 500px;
+    opacity: 0.2;
+    /* padding : 20px; */
     /* margin-left: 0px; */
+}
+
+
+
+.overlay{
+   position: absolute;
+   top: 50%;
+   left: 30%;
+   width: 200px;
+   transform: translate(-50%, -50%);
+   /* background-color: rgba(255, 255, 255, 0.2); */
+   padding: 20px;
+   opacity: 0%;
+   animation: fade-in 2s ease forwards;
+}
+
+@keyframes fade-in{
+   0%{
+      opacity: 0%;
+   }
+   100%{
+      opacity: 100%;
+   }
+}
+
+.overlay p{
+   color: white;
+   font-size: 20px;
+}
+
+.text{
+   color: aliceblue;
+   text-decoration: none;
+}
+
+.button{
+   background-color: #15dde4;
+   border: none;
+   border-radius: 5px;
 }

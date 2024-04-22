@@ -5,7 +5,7 @@ import style from "./about.module.css"
 const About =()=>{
     return(
         <div className={style.container}>
-            <div className={style.backgroun}>
+            <div className={style.background}>
                 <div className={style.parrafo}>
                     <h1 className={style.titulo}>Sobre nosotros</h1>
                     <p className={style.parrafo}>Somos una empresa familiar, con veinte años de trayectoria en el mercado.<br/>

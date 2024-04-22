@@ -1,20 +1,27 @@
 .container{
   padding: 50px;
+  text-align: center;
   color: #fcfafa;
   background-color: #000000;
 }
 
-.footer {
-    padding: 30px 0;
-  }
+.container p{
+  color: white;
+}
+
+.container a{
+  color: white;
+  text-decoration: none;
   
-  .footerBottom {
+}
+  
+.footerBottom {
     text-align: center;
     color: white;
     height: 50px;
     padding-top: 10px;
-    border-top: 1px solid #fcfafa;
-    margin-top: 20px;
+    border-top: 2px solid #fcfafa;
+    /* margin-top: 20px; */
     background-color: #15dde4;
   }
 
@@ -22,6 +29,16 @@
     list-style-type: none;
   }
 
+  .decoration a{
+    color: white;
+    
+    /* text-decoration: none; */
+  }
+
+  .decoration li{
+    margin-bottom: 15px;
+  }
+
   .icon{
-    text-decoration: #15dde4;
+    color: #15dde4;
   }

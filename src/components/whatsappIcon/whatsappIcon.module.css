@@ -8,5 +8,6 @@
     bottom: 25px;
     right: 20px;
     background-color: rgb(37 211 102);
-    color:rgb(94, 88, 88);
+    color:white;
+    border-radius: 100%;
 }
