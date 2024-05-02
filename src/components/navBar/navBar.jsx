@@ -5,15 +5,7 @@ import logo2 from "../../assets/logo2.jpg"
 import logo4 from "../../assets/logo4.jpg"
 
 
-
-
-
-
-
-
-
 const NavBar = ()=>{
-  
   return(
    <div >
       <nav className='navbar navbar-expand-sm'>
@@ -25,20 +17,23 @@ const NavBar = ()=>{
           <a className="navbar-brand">
             <img className={style.logo} src={logo2} alt="logo" />
           </a>
-          <ul className="navbar-nav">
-            <li className="nav-item">
-              <NavLink className={`nav-link ${style.menu}`}  aria-current="page" to='/'>Inicio </NavLink>
-            </li>
-            <li className="nav-item">
-              <NavLink className="nav-link" to='/contacto'>Contacto</NavLink>
-            </li>
-            <li className="nav-item">
-              <NavLink className="nav-link" to='/trabajos' aria-disabled="true">Trabajos</NavLink>
-            </li>
-            <li className="nav-item">
-              <NavLink className="nav-link" to='/about' aria-disabled="true">Sobre nosotros</NavLink>
-            </li>
-          </ul>
+          <h2>CORTINAS METALICAS RAMIREZ</h2>
+          
+            <ul className="navbar-nav">
+              <li >
+                <NavLink className={style.link} aria-current="page" to='/'>Inicio </NavLink>
+              </li>
+              <li >
+                <NavLink className={style.link} to='/contacto'>Contacto</NavLink>
+              </li>
+              <li >
+                <NavLink className={style.link} to='/trabajos' aria-disabled="true">Trabajos</NavLink>
+              </li>
+              <li >
+                <NavLink className={style.link} to='/about' aria-disabled="true">Sobre nosotros</NavLink>
+              </li>
+            </ul>
+          
         </div>
       </div>
   </nav>
@@ -49,6 +44,15 @@ const NavBar = ()=>{
        
   
 export default NavBar
+
+
+
+
+
+
+
+
+
 
 
     

@@ -4,6 +4,7 @@
     justify-content: space-between;
     align-items: center;
     width: 100%;
+    height: 90px;
     position:fixed;
     z-index: 1000;
     margin-top: 39px;
@@ -13,18 +14,31 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    
+    padding: 15px;
+    margin-top: 10px;
 }
 
-.menu{
-    color: aliceblue;
+.navbarNav h2{
+    color: white;
+    text-align: center;
 }
 
 .logo{
-    width: 60px;
-    height: 60px;
+    width: 80px;
+    height: 80px;
     border-radius: 10px;
 }
 
 
+.link{
+    color: aliceblue;
+    text-align: center;
+    text-decoration: none;
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+.link:hover{
+        text-decoration: underline;
+    }
 

@@ -12,6 +12,7 @@
 .servicios p{
     font-family: "HACKED";
     text-align: center;
+    font-size: 25px;
 }
 
 .trabajos{
@@ -47,8 +48,8 @@
 }
 
 .card img{
-    width: 100px;
-    height:100px;
+    width: 150px;
+    height:150px;
     border-radius: 100%;
     border: 2px solid black
 }

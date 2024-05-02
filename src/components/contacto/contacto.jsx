@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import wsp from "../../assets/whatsapp.svg";
 import style from "./contacto.module.css"; // Asegúrate de tener tu archivo de estilos CSS
 
 const Contacto = () => {
@@ -20,7 +19,7 @@ const Contacto = () => {
 
   return (
     <div className={style.contactContainer}>
-      <h3>Contacto</h3>
+      <h1>Contacto</h1>
       <form className={style.contactForm} onSubmit={handleSubmit}>
         <div className={style.formGroup}>
           <label htmlFor="nombre">Nombre:</label>

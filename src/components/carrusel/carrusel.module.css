@@ -1,26 +1,7 @@
-.info h1{
-   margin-top: 50px;
-   text-align: center;
-   font-family: 'HACKED';
-}
-
-.info h3{
-  font-family: "HACKED";
-   
-    text-align: center;
-    margin-top: 25px;
- }
-
- .info p{
-   font-family:"HACKED";
-   
-   
-    text-align: center;
-    padding: 15px;
- }
 
 .carrusel{
-   width: auto;
+   width: 100%;
+   margin-top: 45px;
 }
 
 .carruselItem{
