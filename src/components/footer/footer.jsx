@@ -25,7 +25,7 @@ const Footer = () => {
             <h4>Contacto</h4>
             <p>
                 <a href={googleMapsLink} target="_blank" rel="noopener noreferrer">
-                  <FontAwesomeIcon icon="fa-solid fa-location-dot" />  Ver en Google Maps
+                    Ver en Google Maps
                     
                 </a>
             </p>

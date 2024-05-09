@@ -36,7 +36,7 @@ function App() {
       <ScrolToTop/>
         <Routes>
           <Route path='/' element={<Carrusel/>}/>
-          <Route path='trabajos' element={<Trabajos/>}/>
+          <Route path='/trabajos' element={<Trabajos/>}/>
           <Route path='/contacto' element={<Contacto/>}/>
           <Route path='/about' element= {<About/>}/>
         </Routes>

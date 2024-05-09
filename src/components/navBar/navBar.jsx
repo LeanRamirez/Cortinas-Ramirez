@@ -13,7 +13,7 @@ const NavBar = ()=>{
           <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon"></span>
           </button>
-        <div className={`collapse navbar-collapse ${style.navbarNav}`} d="navbar-toggler">
+        <div className={`collapse navbar-collapse ${style.navbarNav}`} id="navbar-toggler">
           <a className="navbar-brand">
             <img className={style.logo} src={logo2} alt="logo" />
           </a>
