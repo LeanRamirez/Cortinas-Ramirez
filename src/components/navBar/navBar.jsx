@@ -7,7 +7,6 @@ import logo4 from "../../assets/logo4.jpg"
 
 const NavBar = ()=>{
   return(
-   <div >
       <nav className='navbar navbar-expand-sm'>
         <div className={style.containerCustom}>
           <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
@@ -17,9 +16,11 @@ const NavBar = ()=>{
           <a className="navbar-brand">
             <img className={style.logo} src={logo2} alt="logo" />
           </a>
-          <h2>CORTINAS METALICAS RAMIREZ</h2>
+          <h2 className={style.logoName}>CORTINAS METALICAS RAMIREZ</h2>
+          </div>
+         
           
-            <ul className="navbar-nav">
+            <ul className={`navbar-nav ${style.navBarMenu}`}>
               <li >
                 <NavLink className={style.link} aria-current="page" to='/'>Inicio </NavLink>
               </li>
@@ -37,7 +38,6 @@ const NavBar = ()=>{
         </div>
       </div>
   </nav>
-   </div>
         
   )
 }

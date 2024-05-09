@@ -5,17 +5,20 @@
     align-items: center;
     width: 100%;
     height: 90px;
-    position:fixed;
-    z-index: 1000;
-    margin-top: 39px;
+    /* position: fixed;
+    top: 0;
+    left: 0; */
+}
+
+.navbar{
+    padding: 0px;
 }
 
 .navbarNav{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    padding: 15px;
-    margin-top: 10px;
+    height: 100%;
 }
 
 .navbarNav h2{
@@ -29,16 +32,68 @@
     border-radius: 10px;
 }
 
+.logoContainer{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 40%;
+    margin: auto 20px;
+    padding: 0px;
+}
 
-.link{
+.logoName {
+    font-size: 26px;
+    font-weight: 200;
+    margin: 0px;
+}
+
+.navBarMenu {
+    width: 35%;
+    display: flex;
+    justify-content: space-around;
+    margin-right: 20px;
+    font-size: 24px;
+}
+
+/* .link{
     color: aliceblue;
     text-align: center;
     text-decoration: none;
     margin-right: 10px;
     font-size: 20px;
-}
+} */
 
-.link:hover{
+/* .link:hover{
         text-decoration: underline;
-    }
+    } */
+
+/* Estilos base para el enlace */
+.link {
+    text-decoration: none;
+    color: #fff;
+    position: relative;
+    font-size: 18px;
+  }
+  
+  /* Pseudo-elemento ::after para crear la línea subrayada */
+  
+  .link::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #fff;
+    transition: width 0.3s ease;
+  }
+  
+  /* Animación para que la línea aparezca de izquierda a derecha */
+  .link:hover::after {
+    width: 100%;
+    transition: width 0.3s ease;
+  }
+  
+
+
 
