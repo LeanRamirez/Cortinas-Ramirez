@@ -9,7 +9,7 @@ import { NavLink } from "react-router-dom";
 
 const Carrusel=()=>{
     return(
-        <div>
+        <div className={style.carruseContainer}>
             <div id="carouselExampleInterval" className="carousel slide" data-bs-ride="carousel">
                 <div className={` carousel-inner ${style.carrusel}`} >
                     <div className={`carousel-item active ${style.carruselItem}`} data-bs-interval="2000">
