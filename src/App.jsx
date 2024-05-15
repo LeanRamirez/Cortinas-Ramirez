@@ -27,7 +27,6 @@ import 'bootstrap/dist/js/bootstrap.bundle';
 
 
 function App() {
- 
 
   return (
     <div className={style.contenedor}>
@@ -35,8 +34,8 @@ function App() {
       <WhatsAppIcon/>
       <ScrolToTop/>
         <Routes>
-          <Route path='/' element={<Carrusel/>}/>
-          <Route path='trabajos' element={<Trabajos/>}/>
+          <Route path='/inicio' element={<Carrusel/>}/>
+          <Route path='/trabajos' element={<Trabajos/>}/>
           <Route path='/contacto' element={<Contacto/>}/>
           <Route path='/about' element= {<About/>}/>
         </Routes>

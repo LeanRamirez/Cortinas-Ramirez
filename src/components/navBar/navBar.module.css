@@ -1,26 +1,22 @@
+
 .containerCustom{
     background-color: #15dde4;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    width: 100%;
+    width: 100vw;
     height: 90px;
     /* position: fixed;
     top: 0;
     left: 0; */
 }
 
-.navbarNav{
+/* .navbarNav{
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 100%;
-}
-
-.navbarNav h2{
-    color: white;
-    text-align: center;
-}
+} */
 
 .logo{
     width: 80px;
@@ -28,43 +24,41 @@
     border-radius: 10px;
 }
 
-.logoContainer{
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    width: 40%;
-    margin: auto 20px;
-    padding: 0px;
-}
-
 .logoName {
+    color: white;
     font-size: 26px;
     font-weight: 200;
     margin: 0px;
 }
 
+.button{
+    border: solid 5px white;
+    font-weight: bold;
+    background-color: gray;
+}
+
 .navBarMenu {
     width: 35%;
     display: flex;
-    justify-content: space-around;
     margin-right: 20px;
     font-size: 24px;
+    align-items: center;
+    background-color: #15dde4;
 }
 
-/* .link{
-    color: aliceblue;
-    text-align: center;
-    text-decoration: none;
-    margin-right: 10px;
-    font-size: 20px;
+.menu{
+    display: flex;
+    justify-content: space-around;
+}
+
+/* .navBarMenu{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 } */
 
-/* .link:hover{
-        text-decoration: underline;
-    } */
-
 /* Estilos base para el enlace */
-.link {
+.link{
     text-decoration: none;
     color: #fff;
     position: relative;
