@@ -10,10 +10,6 @@
     left: 0; */
 }
 
-.navbar{
-    padding: 0px;
-}
-
 .navbarNav{
     display: flex;
     justify-content: space-between;
