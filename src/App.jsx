@@ -34,7 +34,7 @@ function App() {
       <WhatsAppIcon/>
       <ScrolToTop/>
         <Routes>
-          <Route path='/inicio' element={<Carrusel/>}/>
+          <Route path='/' element={<Carrusel/>}/>
           <Route path='/trabajos' element={<Trabajos/>}/>
           <Route path='/contacto' element={<Contacto/>}/>
           <Route path='/about' element= {<About/>}/>

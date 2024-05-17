@@ -4,7 +4,7 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    width: 100vw;
+    /* width: 100vw; */
     height: 90px;
     /* position: fixed;
     top: 0;
@@ -43,19 +43,14 @@
     margin-right: 20px;
     font-size: 24px;
     align-items: center;
-    background-color: #15dde4;
+    /* background-color: #15dde4; */
 }
 
 .menu{
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-end;
+    margin-right: 7em;
 }
-
-/* .navBarMenu{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-} */
 
 /* Estilos base para el enlace */
 .link{
@@ -84,6 +79,56 @@
     transition: width 0.3s ease;
   }
   
+  @media screen and  (max-width: 767.98px){
+    .menu {
+        position: absolute;
+        align-items: center;
+        top: 17vh;
+        right: 0;
+        /* transform: translateX(100%); */
+        transition: transform 0.5s ease;
+        height: 98vh;
+        width: 50%;
+        background-color: #29c7cc;
+        opacity: 0.9;
+        z-index: 1000;
+        overflow-y: auto;
+        padding-top: 4rem;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .menu.open {
+        transform: translateX(0);
+    }
+
+    .navBarMenu{
+        align-items:center;
+        width: 100%;
+        margin-top: -70px;
+        
+    }
+
+    .item{
+        font-size: 19px;
+        padding: 1rem;
+        text-align: center;
+        margin-top: -10px;
+        /* border: solid 3px white; */
+    }
+
+    .link{
+        color: #fff
+    }
+
+    .button{
+        position: relative;
+    }
+
+    /* .menu.open{
+        right: 0;
+    } */
+  }
 
 
-
+  /* requerimientos(clasificacion) epics features stories sas */
