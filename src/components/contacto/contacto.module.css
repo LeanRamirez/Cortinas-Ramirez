@@ -1,46 +1,52 @@
 /* En tu archivo de estilos CSS (contacto.css) */
+.mainContainer {
+  width: 100%;
+  height: 90vh;
+  background-image: url('../../assets/fondoContacto.webp');
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
 .contactContainer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    max-width: 100%;
-    height: 700px;
-    margin: 0 auto;
-    margin-top: 40px;
-    padding-bottom: 15px;
-    background-image: url("../../assets/fondoContacto.webp");
+    width: 900px;
+    height: 500px;
     background-size: cover;
 }
 
-
-
-  .contactContainer h1{
-    font-family: 'HACKED';
-    color:black;
-    margin-bottom: 10px;
-  }
+.titleContainer{
+  width: 39%;
+  height: 98%;
+  background-color: #15dde4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+  font-weight: 200;
+  border-radius: 10px 0 0 10px;
+  font-size: 24px;
+  padding: 20px;
+}
   
   .contactForm {
+    width: 100%;
+    background-color: gray;
+    opacity: 0.95;
+    height: 98%;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    justify-content: center;
+    border-radius: 0 10px 10px 0;
   }
   
   .formGroup {
     display: flex;
     flex-direction:column;
     align-items: center;
-    margin-bottom: 1rem;
-  }
-
-  .formGroup label{
-    font-family: 'HACKED';
-    font-size: 25px;
-    margin-right: 15px;
-    margin-bottom: 5px;
-    color: rgb(68, 67, 66);
-    text-decoration: underline rgb(2, 1, 1);
+    padding-left: 20px;
   }
 
   .contactContainer{
@@ -48,32 +54,40 @@
     align-items: center;
   }
 
-
   .contactBtn {
-    background-color: #4caf50;
+    background-color: #15dde4;
     color: #fff;
     padding: 10px;
     border: none;
     cursor: pointer;
     text-align: center;
-    /* align-items: center; */
+    border-radius: 5px;
+    margin: auto;
   }
 
   .textArea{
-    width: 40vw;
-    margin-left: 15px;
-    background-color: rgb(240, 238, 238);
-    color: rgb(34, 32, 32);
+    border-radius: 5px;
+    border: none;
+    width: 70%;
+    height: 40px;
+    margin: 10px 0;
+    padding-left: 20px;
   }
     
   .inputArea{
-    width: 40vw;
-    height: 100px; /* Ajusta la altura según sea necesario */
+    height: 130px; /* Ajusta la altura según sea necesario */
+    width:70%;
     resize: vertical; /* Permite redimensionar verticalmente */
-    overflow-y: auto;
-    margin-left: 15px;
-    background-color: rgb(240, 238, 238);
-    color: rgb(34, 32, 32);
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 30px;
+  }
+
+  .btnContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
   }
   
  

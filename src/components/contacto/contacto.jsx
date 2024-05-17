@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import style from "./contacto.module.css"; // Asegúrate de tener tu archivo de estilos CSS
+import logoGris from "../../assets/logoGris.png"
 
 const Contacto = () => {
   const [nombre, setNombre] = useState('');
@@ -18,43 +19,48 @@ const Contacto = () => {
   };
 
   return (
-    <div className={style.contactContainer}>
-      <h1>Contacto</h1>
-      <form className={style.contactForm} onSubmit={handleSubmit}>
-        <div className={style.formGroup}>
-          <label htmlFor="nombre">Nombre:</label>
-          <input className={style.textArea}
-            type="text"
-            id="nombre"
-            value={nombre}
-            onChange={(e) => setNombre(e.target.value)}
-            required
-          />
-        </div>
+    <div className={style.mainContainer}>
+        <div className={style.contactContainer}>
+          <div className={style.titleContainer}>
+              <div>
+                <p>¡Contactanos!</p>
+              <img className={style.logo} src={logoGris} alt="logo" />
+              </div>
+            </div>
+          <form className={style.contactForm} onSubmit={handleSubmit}>
+            <div className={style.formGroup}>
+              <input className={style.textArea}
+                type="text"
+                id="nombre"
+                placeholder='Nombre'
+                value={nombre}
+                onChange={(e) => setNombre(e.target.value)}
+                required
+              />
+            </div>
 
+            <div className={style.formGroup}>
+              <input className={style.textArea}
+                type="tel"
+                id="telefono"
+                placeholder='Telefono'
+                value={telefono}
+                onChange={(e) => setTelefono(e.target.value)}
+                required
+              />
+            </div>
 
         <div className={style.formGroup}>
-          <label htmlFor="telefono"> Telefono:</label>
-          <input className={style.textArea}
-            type="tel"
-            id="telefono"
-            value={telefono}
-            onChange={(e) => setTelefono(e.target.value)}
-            required
-          />
-        </div>
-
-        <div className={style.formGroup}>
-          <label htmlFor="consulta">Consulta:</label>
           <textarea className={style.inputArea}
             type="text"
             id="consulta"
+            placeholder='Envíenos su consulta por mail y le responderemos a la brevedad'
             value={consulta}
             onChange={(e) => setConsulta(e.target.value)}
             required
           />
         </div>
-        <div className={style.buttonContainer}>
+        <div className={style.btnContainer}>
           <button type="submit" className={style.contactBtn}>
             Enviar correo 
           </button>
@@ -62,6 +68,7 @@ const Contacto = () => {
         </div>
       </form>
     </div>
+    </div> 
   );
 };
 
