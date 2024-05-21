@@ -1,134 +1,229 @@
-
-.containerCustom{
-    background-color: #15dde4;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    /* width: 100vw; */
-    height: 90px;
-    /* position: fixed;
-    top: 0;
-    left: 0; */
+/* .containerCustom {
+  background-color: #15dde4;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 90px;
 }
 
-/* .navbarNav{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 100%;
-} */
-
-.logo{
-    width: 80px;
-    height: 80px;
-    border-radius: 10px;
+.logo {
+  width: 80px;
+  height: 80px;
+  border-radius: 10px;
 }
 
 .logoName {
-    color: white;
-    font-size: 26px;
-    font-weight: 200;
-    margin: 0px;
-}
-
-.button{
-    border: solid 5px white;
-    font-weight: bold;
-    background-color: gray;
+  color: white;
+  font-size: 26px;
+  font-weight: 200;
+  margin: 0px;
 }
 
 .navBarMenu {
-    width: 35%;
-    display: flex;
-    margin-right: 20px;
-    font-size: 24px;
-    align-items: center;
-    /* background-color: #15dde4; */
+  width: 35%;
+  display: flex;
+  margin-right: 20px;
+  font-size: 24px;
+  align-items: center;
 }
 
-.menu{
-    display: flex;
-    justify-content: flex-end;
-    margin-right: 7em;
+.menu {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 7em;
 }
 
-/* Estilos base para el enlace */
-.link{
-    text-decoration: none;
-    color: #fff;
+.link {
+  text-decoration: none;
+  color: #fff;
+  position: relative;
+  font-size: 18px;
+}
+
+.link::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #fff;
+  transition: width 0.3s ease;
+}
+
+.link:hover::after {
+  width: 100%;
+  transition: width 0.3s ease;
+}
+
+@media screen and (max-width: 768px) {
+  .button {
     position: relative;
-    font-size: 18px;
+    border: solid 5px white;
+    font-weight: bold;
+  }
+
+  .containerMenu{
+    transition: 0.3s ease;
   }
   
-  /* Pseudo-elemento ::after para crear la línea subrayada */
-  
-  .link::after {
-    content: '';
+  .navBarMenu {
+    display: none;
+  }
+
+  .menu {
     position: absolute;
-    bottom: -2px;
-    left: 0;
-    width: 0;
-    height: 2px;
-    background-color: #fff;
-    transition: width 0.3s ease;
+    align-items: center;
+    top: 17vh;
+    right: 0;
+    transition: transform 0.5s ease;
+    height: 98vh;
+    width: 50%;
+    background-color: #29c7cc;
+    opacity: 0.9;
+    z-index: 1000;
+    overflow-y: auto;
+    padding-top: 4rem;
+    margin: 0;
+    padding: 0;
   }
-  
-  /* Animación para que la línea aparezca de izquierda a derecha */
-  .link:hover::after {
+
+  .menu.open {
+    transform: translateX(0);
+  }
+
+  .navBarMenu {
+    align-items: center;
     width: 100%;
-    transition: width 0.3s ease;
+    margin-top: -70px;
   }
-  
-  @media screen and  (max-width: 767.98px){
-    .menu {
-        position: absolute;
-        align-items: center;
-        top: 17vh;
-        right: 0;
-        /* transform: translateX(100%); */
-        transition: transform 0.5s ease;
-        height: 98vh;
-        width: 50%;
-        background-color: #29c7cc;
-        opacity: 0.9;
-        z-index: 1000;
-        overflow-y: auto;
-        padding-top: 4rem;
-        margin: 0;
-        padding: 0;
-    }
+
+  .item {
+    font-size: 19px;
+    padding: 1rem;
+    text-align: center;
+    margin-top: -10px;
+  }
+
+  .link {
+    color: #fff;
+  }
+} */
+
+
+.containerCustom {
+  background-color: #15dde4;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 90px;
+}
+
+.logo {
+  width: 80px;
+  height: 80px;
+  border-radius: 10px;
+}
+
+.logoName {
+  color: white;
+  font-size: 26px;
+  font-weight: 200;
+  margin: 0px;
+}
+
+.navBarMenu {
+  width: 35%;
+  display: flex;
+  margin-right: 20px;
+  font-size: 24px;
+  align-items: center;
+}
+
+.menu {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 7em;
+  background-color: #29c7cc; /* Color de fondo del menú */
+  opacity: 0.9;
+  border: none; /* Sin bordes */
+}
+
+.link {
+  text-decoration: none;
+  color: #fff;
+  position: relative;
+  font-size: 18px;
+}
+
+.link::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #fff;
+  transition: width 0.3s ease;
+}
+
+.link:hover::after {
+  width: 100%;
+  transition: width 0.3s ease;
+}
+
+@media screen and (max-width: 768px) {
+  .button {
+    position: relative;
+    border: solid 5px white;
+    font-weight: bold;
+  }
+
+  /* .navBarMenu {
+    display: none;
+  } */
+
+  .menu {
+    position: fixed; /* Fija el menú en su lugar */
+    top: 17vh;
+    right: 0;
+    /* transition: right 0.3s ease; */
+    height: 80%; /* Ajusta la altura automáticamente */
+    width: 50%;
+    background-color: #29c7cc; /* Color de fondo uniforme */
+    opacity: 0.9;
+    z-index: 1000;
+    overflow-y: auto;
+    padding-top: 4rem;
+    padding-bottom: 2rem;
+    margin-right: 0; /* Añade espacio inferior */
+  }
+
+  /* .menu.show{
+    right: 0;
+  } */
+
+  .navBarMenu {
+    align-items: center;
+    width: 100%;
     
-    .menu.open {
-        transform: translateX(0);
-    }
-
-    .navBarMenu{
-        align-items:center;
-        width: 100%;
-        margin-top: -70px;
-        
-    }
-
-    .item{
-        font-size: 19px;
-        padding: 1rem;
-        text-align: center;
-        margin-top: -10px;
-        /* border: solid 3px white; */
-    }
-
-    .link{
-        color: #fff
-    }
-
-    .button{
-        position: relative;
-    }
-
-    /* .menu.open{
-        right: 0;
-    } */
   }
+
+  .item {
+    font-size: 19px;
+    padding: 1rem;
+    text-align: center;
+    
+  }
+
+  .link {
+    color: #fff;
+  }
+}
+
+
+
+
 
 
   /* requerimientos(clasificacion) epics features stories sas */
